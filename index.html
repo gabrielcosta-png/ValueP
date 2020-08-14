@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estastitica</title>
+  <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+  <div id="page">
+    <header>
+      <h1>Estastitica</h1>
+    </header>
+    <main>
+      <div id="tabs">
+        <div class="tab-links">
+          <button data-id="prepare" data-open>Teste T</button>
+          <button data-id="produce">Regressão</button>
+          <button data-id="delivery">Correlação</button>
+        </div>
+  
+        <div class="tab-content">
+          <section id="prepare">
+            <h2>Teste T</h2>
+              <p>O teste t de Student ou somente teste t é um teste de hipótese que usa conceitos estatísticos para rejeitar ou não uma hipótese nula quando a estatística de teste  segue uma distribuição t de Student.
+
+                Essa premissa é normalmente usada quando a estatística de teste, na verdade, segue uma distribuição normal, mas a variância da população é desconhecida. Nesse caso, é usada a variância amostral e, com esse ajuste, a estatística de teste passa a seguir uma distribuição t de Student.</p>
+          </section>
+          <section id="produce">
+            <h2>Regressão</h2>
+            
+            </form>
+            <p>Em estatística ou econometria, regressão linear é uma equação para se estimar a condicional (valor esperado) de uma variável y, dados os valores de algumas outras variáveis x</p>
+          </section>
+          <section id="delivery">
+            <h2>Correlação</h2>
+            <p>Correlação, dependência ou associação é qualquer relação estatística (causal ou não causal) entre duas variáveis[1] e correlação é qualquer relação dentro de uma ampla classe de relações estatísticas que envolva dependência entre duas variáveis</p>
+          </section>
+        </div>
+        <form action="1" name="calc" class="calc" >
+          <input type="text" name="valuep" id="valuep" placeholder="Resultado do Teste " >
+          <input type="button" value = "0.05"  onclick ="botao(value)">
+          <input type="button" value= "0.049"  onclick ="botao(value)"> 
+         </form> 
+          <div id="result"></div>
+          <button onclick='converter()'>Resultado</button>
+          <button onclick='resetar()'>Limpar</button>
+      </div>
+    </main>
+  </div>
+  <script src="main.js"></script>
+  <script src="valorp.js"></script>
+</body>
+
+</html>
+
